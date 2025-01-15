@@ -1,11 +1,10 @@
 
-const Person = ({name,number}) => {
-return(
+const Person = ({name,number,buttonfunction}) => 
+(
 <div>
-    <p>{name} {number}</p>
+    Name: {name}
+    <p>Number: {number}</p>
+    <button onClick={buttonfunction} value={name}>delete</button>
 </div>
 )
-
-}
-
 export default Person
